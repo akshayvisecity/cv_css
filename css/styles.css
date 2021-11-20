@@ -144,3 +144,20 @@ a:hover {
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
 }
+.glow {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #30e3cb, 0 0 4px #30e3cb, 0 0 5px #30e3cb, 0 0 6px #30e3cb, 0 0 7px #30e3cb;
+  }
+
+  to {
+    text-shadow: 0 0 2px #fff, 0 0 3px #30e3cb, 0 0 4px #30e3cb, 0 0 5px #30e3cb, 0 0 6px #30e3cb, 0 0 7px #30e3cb, 0 0 80px #30e3cb;
+  }
+}
